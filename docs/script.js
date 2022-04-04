@@ -22,7 +22,7 @@ function roundDecimal(x){
 }
 
 function calcFinal(){
-    let val = (vals[0] * vals[1] / 100 + vals[2]) * (1 + vals[3] / 700) * (1 + vals[4] / 100) * (1 + vals[5] / 700) * (1 + vals[6] / 100) * (1 + vals[7] / 100) * (1 + vals[8] / 100) * (1 + vals[9] / 100) * (1 + vals[10] / 100);
+    let val = (vals[0] * vals[1] / 100 + vals[2]) * (1 + vals[3] / 700) * (1.5 + vals[4] / 100) * (1 + vals[5] / 700) * (1 + vals[6] / 100) * (1 + vals[7] / 100) * (1 + vals[8] / 100) * (1 + vals[9] / 100) * (1 + vals[10] / 100);
     outputTag.innerText = "Final Damage: " + roundDecimal(val);
 }
 
